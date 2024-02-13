@@ -87,3 +87,6 @@ Stop and remove the containers
 ```shell
 $ docker compose down
 ```
+
+วิธี deploy ขึ้น AWS สามารถดูได้ที่ CRUD api Docker Run On AWS.pdf
+ขอขอบคุณผู้จัดทำ pdf => https://github.com/Thanabodin19
