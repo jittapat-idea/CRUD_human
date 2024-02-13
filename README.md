@@ -89,4 +89,18 @@ $ docker compose down
 ```
 
 วิธี deploy ขึ้น AWS สามารถดูได้ที่ CRUD api Docker Run On AWS.pdf
+อย่าลืม เมื่อโหลด key จาก aws เเล้ว(ควรใส่ใน folder ที่ทำ) 
+ใน terminal ที่ทำงาน ให้ใช้คำสั่ง 
+
+"chmod 400 golang_CRUD.pem" 
+
+เพื่ออนุญาตให้เข้าถึง key ได้
+ตามด้วย 
+
+"ssh -i golang_CRUD.pem ubuntu@54.196.174.214" 
+
+โดยที่ golang_CRUD.pem คือ key ที่เราโหลดมา เเละ 54.196.174.214 คือ ipv4 ที่เราได้จาก instance ที่เราสร้างใน aws
+จากนั้นเมื่อเสร็จเราก็จะเข้า ubuntu ผ่าน vm ของ aws ได้เเล้วนั้นเอง
+ขั้นตอนที่เหลือก็ตาม pdf ได้เลย...
+
 ขอขอบคุณผู้จัดทำ pdf => https://github.com/Thanabodin19
